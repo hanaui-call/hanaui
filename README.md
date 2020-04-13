@@ -12,3 +12,6 @@ alias rpmsh='dc exec web python manage.py shell_plus'
 ```bash
 dc up -d
 ```
+
+## HTML
+* http://localhost:8480/
