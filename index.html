@@ -1,4 +1,82 @@
-<html>
-<h1>Hello World!</h1>
-  <p>This is a simple static website!</p>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>하.나.의. 교회</title>
+	<script src="https://kit.fontawesome.com/4ce77acd8f.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		/* reset */
+		body,div,h2,h3,ol,li,p,img,span,br,ul,strong{margin:0;padding:0;}
+		ol,ul,li{list-style:none;}
+		a{color:#000; text-decoration:none;background-color:transparent;}
+		html {
+		  font-family: 'NanumGothic','NotoSans','Arial';
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		}
+		body {
+		  font-family: 'NanumGothic','NotoSans','Arial', ;
+		  margin: 0;
+		}
+		/* wrap */
+		#wrap{width:80%; margin:10px auto;}
+		#wrap h2{text-align:center;margin:30px 0;font-size:20px;border-bottom:3px solid #344955;padding-bottom:15px;}
+		#logo {text-align:center;margin:30px 0;border-bottom:3px solid #344955;padding-bottom:15px;}
+		#logo img{width:200px;} 
+
+		#banner_list{width:90%;height:500px;padding-top:10px;position:relative;margin:0 auto;}
+		#banner_list ul li{float:left;width:33.3%;text-align:center;margin:15px 0;}
+		#banner_list ul li:hover i{color:#344955;}
+		#banner_list ul li:hover p{font-weight:bold;}
+		#banner_list ul li p{color:#666; line-height:1.5em; padding-top:15px;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="logo">
+			<img src="./logo.jpg" alt="하.나.의. 교회"/>
+		</div>
+		<div id="banner_list">
+			<ul>
+				<li>
+					<a href="#">
+						<i class="fas fa-bullhorn fa-5x"></i>
+						<p>공지사항</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="far fa-file-alt fa-5x"></i>
+						<p>주보</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="far fa-file-audio fa-5x"></i>
+						<p>말씀</p>
+					</a>
+				</li>
+				<li>
+					<a href="http://as.hanaui.net/" target="_blank">
+						<i class="fas fa-users fa-5x"></i>
+						<p>오후강좌</p>
+					</a>
+				</li>
+				<li>
+					<a href="http://contacts.hanaui.net/" target="_blank">
+						<i class="fas fa-address-book fa-5x"></i>
+						<p>주소록</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-map-marker-alt fa-5x"></i>
+						<p>오시는 길</p>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</body>
 </html>
