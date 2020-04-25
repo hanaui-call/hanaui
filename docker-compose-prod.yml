@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx:
+    restart: always
+    build: ./
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "80:80"
