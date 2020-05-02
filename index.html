@@ -19,61 +19,73 @@
 		  margin: 0;
 		}
 		/* wrap */
-		#wrap{width:100%; margin:10px auto;}
+		#wrap{width:100%; margin:auto;}
 		#wrap h2{text-align:center;margin:30px 0;font-size:20px;border-bottom:3px solid #344955;padding-bottom:15px;}
-		#logo {text-align:center;margin:20px 0;border-bottom:3px solid #344955;padding-bottom:15px;}
-		#logo img{width:50%;} 
+		#logo {text-align:center;margin:20px 0; border-bottom:3px solid #A4BBA6;padding-bottom:15px;}
+		#logo img{width:50%;margin:10px;}
 
-		#banner_list{width:100%;height:70%;padding-top:25px;position:relative;margin:0 auto;}
-		#banner_list ul li{float:left;width:50%;text-align:center;margin:40px 0;}
-		#banner_list ul li:hover i{color:#344955;}
-		#banner_list ul li:hover p{font-weight:bold;}
+		#banner_list{width:100%;height:70%;padding-top:25px; position:relative;margin:0 auto;}
+
+    #banner_list ul li{float:left; width:50%;text-align:center;margin:40px 0;}
+		#banner_list ul li i {color:#1F364A;}
+	  #banner_list ul li:hover i{color:#8DAAC2;}
+		/*#banner_list ul li:hover i{color:#344955;} */
+		#banner_list ul li:hover p{color:#1F364A; font-weight:bold;}
 		#banner_list ul li p{
-			color:#666;
-			padding-top:25px; 
-			font-size: 35px;
-			font-weight: 500;
+			color:#000000;
+			padding-top:25px; padding-bottom: 30px;
+			font-size: 40px;
+			font-weight: 440;
 			line-height: 50px;
 		}
+
 		footer {
 			clear:both;
+			background-color:#D5E3D7;
 			width: 100%;
 			margin: auto 0;
+			padding-top: 20px;
 			padding-Bottom: 20px;
 		}
-		footer p{
+	 #donation {
+							 width:60%; margin:20px auto;
+							 vertical-align: middle;
+
+							}
+
+ footer table.donate{
+			width:100%;
+			border-collapse:collapse;
+			border-spacing: 20;
 			text-align:center;
-			color:#2C3E50;
-			font-size: 30px;
-			font-weight: 500;
-			line-height: 40px;
+			color:#0F2130;
+			font-size: 35px;
+			font-weight: 480;
 		}
-		footer p.title{
-			text-align:center;
-			color:#5D6D7E;
-			font-size: 33px;
-			font-weight: 700;
-			line-height: 60px;
+	#donate_title {
+			font-size: 42px;
+			font-weight: 550;
+			height: 60px;
 		}
 	</style>
 </head>
 <body>
 	<div id="wrap">
 		<div id="logo">
-			<img src="./logo.jpg" alt="하.나.의. 교회"/>
+			<img src="./hanaui_logo.svg" alt="하.나.의. 교회"/>
 		</div>
 		<div id="banner_list">
 			<ul>
 				<li>
 					<a href="https://m.post.naver.com/my/series/detail.nhn?seriesNo=586836&memberNo=12194274" target="_blank">
 						<i class="fas fa-bullhorn fa-10x"></i>
-						<p>공지사항</p>
+						<p>알림</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
 						<i class="fas fa-cross fa-10x"></i>
-						<p>하.나.의. 소개 (공사중)</p>
+						<p>교회소개 (공사중)</p>
 					</a>
 				</li>
 				<li>
@@ -85,19 +97,19 @@
 				<li>
 					<a href="https://www.podty.me/cast/204597" target="_blank">
 						<i class="far fa-file-audio fa-10x"></i>
-						<p>말씀</p>
+						<p>설교말씀</p>
 					</a>
 				</li>
 				<li>
 					<a href="http://as.hanaui.net/" target="_blank">
-						<i class="fas fa-users fa-10x"></i>
+						<i class="fas fa-graduation-cap fa-10x"></i>
 						<p>오후강좌</p>
 					</a>
 				</li>
 				<li>
 					<a href="http://contacts.hanaui.net" target="_blank">
 						<i class="fas fa-address-book fa-10x"></i>
-						<p>주소록</p>
+						<p>가족찾기</p>
 					</a>
 				</li>
 				<li>
@@ -109,10 +121,21 @@
 			</ul>
 		</div>
 		<footer>
-			<p class="title"><i class="far fa-thumbs-up"></i> 하소연 FOUNDER </p>
-			<p>기호용  김일웅  김치영  이광윤</p>
-			<p>이수영  이진규  정지훈  한지일</p>
+
+			<div id="donation">
+				<table class="donate">
+					<caption id="donate_title"> 하소연 후원자 </captino>
+ 				 <tr>
+ 				 	<td>한지일</td><td>정지훈</td><td>이진규</td><td>이수영</td><td>이광윤</td>
+ 				 </tr>
+ 				 <tr>
+ 				 	<td>김치영</td><td>김일웅</td><td>기호용</td><td>구자옥</td><td><i class="far fa-heart"></i></td>
+ 		   </table>
+
+			</div>
+
+
 		</footer>
-	</div>
+	 </div>
 </body>
 </html>
